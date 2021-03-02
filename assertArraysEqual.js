@@ -1,6 +1,6 @@
 // first compare length of two arrays, return false if doesn't match
 // loop though array values and compare
-const eqArrays = function(arrayOne, arrayTwo) {
+const assertArraysEqual = function(arrayOne, arrayTwo) {
 
   if (arrayOne.length === arrayTwo.length) {
 
@@ -16,6 +16,6 @@ const eqArrays = function(arrayOne, arrayTwo) {
   return `${arrayOne} equals to ${arrayTwo}.`;;
 };
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3]));
-console.log(eqArrays([1, 2, 3], [1, 5, 3]));
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
+console.log(assertArraysEqual([1, 2, 3], [1, 5, 3]));
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3]));
