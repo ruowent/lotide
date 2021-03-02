@@ -11,9 +11,9 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
       }
     }
   } else {
-    return `${arrayOne} does not equal to ${arrayTwo}.`;;
+    return `${arrayOne} does not equal to ${arrayTwo}.`;
   }
-  return `${arrayOne} equals to ${arrayTwo}.`;;
+  return `${arrayOne} equals to ${arrayTwo}.`;
 };
 
 console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
