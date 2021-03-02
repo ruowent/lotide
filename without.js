@@ -1,18 +1,18 @@
 const assertArraysEqual = function(arrayOne, arrayTwo) {
 
-    for (let i = 0; i < arrayOne.length; i++) {
+  for (let i = 0; i < arrayOne.length; i++) {
 
-      if (arrayOne[i] !== arrayTwo[i]) {
-        console.log(`${arrayOne} does not equal to ${arrayTwo}.`);
-      }
+    if (arrayOne[i] !== arrayTwo[i]) {
+      console.log(`${arrayOne} does not equal to ${arrayTwo}.`);
     }
+  }
   console.log(`${arrayOne} equals to ${arrayTwo}.`);
 };
 
 
 const without = function(words, itemsToRemove) {
 
-  let newArray =[];
+  let newArray = [];
 
   for (const word of words) {
 
@@ -28,7 +28,7 @@ const without = function(words, itemsToRemove) {
 
   console.log(newArray);
 
-}
+};
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
@@ -36,6 +36,6 @@ without(words, ["lighthouse"]); // no need to capture return value for this test
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 
-without([1, 2, 3], [1]) // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+without([1, 2, 3], [1]); // => [2, 3]
+without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 
